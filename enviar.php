@@ -23,15 +23,15 @@ $message = $_POST['message'];
 
 //Configuracao do server
 $mail->isSMTP();
-$mail->Host       = 'smtp.sendgrid.net';
+$mail->Host       = 'smtp.office365.com';
 $mail->SMTPAuth   = true;
-$mail->Username   = 'apikey';
-$mail->Password   = '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';
+$mail->Username   = 'services@diegolopez.com.br';
+$mail->Password   = 'Gub48649';
 $mail->Port       = 587;
 
 //Recipients
-$mail->setFrom('contato@diegolopez.com.br', 'Contato '.$nome);
-$mail->addAddress('oi@diegolopez.com.br', 'Formulario via site '.$nome);
+$mail->setFrom('services@diegolopez.com.br', 'Services'.$nome);
+$mail->addAddress('oi@diegolopez.com.br', 'Formulario via site'.$nome);
 $conteudo = "
 <table border='1'>
   <tr>
